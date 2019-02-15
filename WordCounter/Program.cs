@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using WordCounter.Models;
+// using WordCounter.Models;
 
 namespace WordCounter
 {
@@ -25,6 +25,7 @@ namespace WordCounter
           count +=1;
         }
         Console.WriteLine("This word appears " + count + " time(s) in that sentence");
+        Environment.Exit(0);
+      }
     }
   }
-}
