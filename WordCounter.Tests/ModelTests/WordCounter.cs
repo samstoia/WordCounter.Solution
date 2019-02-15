@@ -29,7 +29,7 @@ namespace WordCounter.Tests
         string result1 = wordCounterTest.GetWord();
         string result2 = wordCounterTest.GetSentence();
         //
-        Assert.AreEqual(result1, result2);
+        Assert.AreEqual(result1, result2)
       }
     }
   }
