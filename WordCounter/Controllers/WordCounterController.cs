@@ -12,6 +12,20 @@ namespace WordCounter.Controllers
     {
       return View();
     }
+
+    [HttpGet("/wordcounter/new")]
+    public ActionResult New()
+    {
+      return View();
+    }
+    [HttpPost("/wordcounter/show")]
+    public ActionResult Show(string word, string sentence)
+    {
+      RepeatCounter newCounter = new RepeatCounter(word, sentence);
+      newCounter.GetCount();
+      return View(newCounter);
+    }
+
   }
 }
 

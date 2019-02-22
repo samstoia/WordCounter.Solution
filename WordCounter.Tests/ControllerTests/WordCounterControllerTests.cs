@@ -16,5 +16,19 @@ namespace WordCounter.Tests
       ActionResult indexView = controller.Index();
       Assert.IsInstanceOfType(indexView, typeof(ViewResult));
     }
+    [TestMethod]
+    public void New_ReturnsCorrectView_True()
+    {
+      WordCounterController controller = new WordCounterController();
+      ActionResult newView = controller.New();
+      Assert.IsInstanceOfType(newView, typeof(ViewResult));
+    }
+    [TestMethod]
+    public void Show_ReturnsCorrectView_True()
+    {
+      WordCounterController controller = new WordCounterController();
+      ActionResult newShow = controller.Show("word", "sentence");
+      Assert.IsInstanceOfType(newShow, typeof(ViewResult));
+    }
   }
 }
