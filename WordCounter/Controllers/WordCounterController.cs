@@ -22,7 +22,7 @@ namespace WordCounter.Controllers
     public ActionResult Create(string word, string sentence)
     {
       RepeatCounter newCounter = new RepeatCounter(word, sentence);
-      newCounter.GetCount();
+      newCounter?.GetCount();
       return View(newCounter);
     }
 

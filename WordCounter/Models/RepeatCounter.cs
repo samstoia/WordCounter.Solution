@@ -11,8 +11,8 @@ namespace WordCounter.Models
 
     public RepeatCounter(string word, string sentence)
     {
-      _word = word.ToLower();
-      _sentence = sentence.ToLower();
+      _word = word.ToUpper();
+      _sentence = sentence.ToUpper();
     }
     public string GetWord()
     {
@@ -35,7 +35,7 @@ namespace WordCounter.Models
     public int GetCount()
     {
       _count = 0;
-      string[] sentenceArray = _sentence.Split(new Char[] {' ', ',', '.' });
+      string[] sentenceArray = _sentence.Split(new Char[] {' ', ',', '.', '?', '?' });
       foreach (string arrayWord in sentenceArray)
       {
         if(arrayWord.Equals(_word))
@@ -45,5 +45,6 @@ namespace WordCounter.Models
       }
       return _count;
     }
+
   }
 }
