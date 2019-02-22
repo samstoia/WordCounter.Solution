@@ -1,6 +1,6 @@
 # The Word Counter Project
 
-This is a basic console program in C# that allows users to input a sentence and then check to see how many times a particular word was used in that sentence.
+This is a website made in C# that allows users to input a sentence and then check to see how many times a particular word was used in that sentence.
 
 ## Specifications
 
@@ -16,21 +16,22 @@ Below is a sample of behaviors of the program.
 
 ## Setup and Use
 
-In order to use the program...
+#### Setup/Installation
+* Must have
 
-* Go to the [GitHub repository](https://github.com/samstoia/WordCounter.Solution) and use the [clone https link](https://github.com/samstoia/WordCounter.Solution.git) to clone or download the files.
-* Open the WordCounter.Solution folder, then navigate to the WordCounter folder. Open the Program.exe file in that folder. OR open your console, navigate to WordCounter.Solution/WordCounter and type "mono Program.exe".
-* Once open, you will be prompted to enter a sentence, and then a word to count.  If your input is empty, you will get an error message and the program will restart.  You will also have the option to check another sentence once a successful test has been completed.
-* If you'd like to exit program after checking a sentence, type "N" and then enter when prompted.
 
-### Prerequisites
+#### Open Locally
+1. Navigate to the working directory: _$ cd CDorganizer.Solution_
+2. Use your preferred IDE or editor to edit the project
+3. Open the Program.exe file or use _$ mono Program.exe_ to run application
 
-To setup or use this program:
+#### Compile Locally
+1. Navigate to the project directory: _$ cd CDorganizer.Solution/CDorganizer
+2. Execute _$ mcs Program.cs Models/Organizer.cs_ to compile new Program.exe file
 
-```
-* Must have a console that can run C# console applications.
-
-```
+#### Test Locally
+1. Navigate to the working directory: _$ cd CDorganizer.Solution/CDorganizer.Tests_
+2. Execute _$ dotnet tests_ to run application tests
 
 ## Built With
 
