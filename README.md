@@ -24,10 +24,17 @@ Below is a sample of behaviors of the website:
 
 ## Built With
 
+* C#
+* .NET Core
+* MVC
 * Atom (IDE)
 * MSTest
 * Git Bash
 * MONO
+
+## Known Bugs
+
+If the form is submitted and both fields are blank, the user will get an error.  There is a null reference excpetion that so far is unfixed.
 
 ## Authors
 
