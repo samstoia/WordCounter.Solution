@@ -24,11 +24,11 @@ namespace WordCounter.Tests
       Assert.IsInstanceOfType(newView, typeof(ViewResult));
     }
     [TestMethod]
-    public void Show_ReturnsCorrectView_True()
+    public void Create_ReturnsCorrectView_True()
     {
       WordCounterController controller = new WordCounterController();
-      ActionResult newShow = controller.Show("word", "sentence");
-      Assert.IsInstanceOfType(newShow, typeof(ViewResult));
+      ActionResult newCreate = controller.Create("word", "sentence");
+      Assert.IsInstanceOfType(newCreate, typeof(ViewResult));
     }
   }
 }
