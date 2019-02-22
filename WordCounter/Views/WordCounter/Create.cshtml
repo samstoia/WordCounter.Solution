@@ -1,11 +1,18 @@
-@using WordCounter.Models;
-
-<h1>Word Counter Result</h1>
-
-@if (@Model.GetWord().Length < 1 || @Model.GetSentence().Length < 1)
-{
-  <p>Sorry, something went wrong. Check your inputs and try again.</p>
+@{
+  Layout = "_Layout";
 }
-<p>"@Model.GetWord()" appears @Model.GetCount() time(s) in that sentence</p>
+<div class="container">
 
-<p><a href="/wordcounter/new">Check another word</a>
+    @using WordCounter.Models;
+
+    <h1>Word Counter Result</h1>
+
+    @if (@Model.GetWord().Length < 1 || @Model.GetSentence().Length < 1)
+    {
+      <p>Sorry, something went wrong. Check your inputs and try again.</p>
+    }
+    <p>"@Model.GetWord()" appears @Model.GetCount() time(s) in that sentence</p>
+
+    <p><a href="/wordcounter/new">Check another word</a>
+
+</div>
